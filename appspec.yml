@@ -2,9 +2,8 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
-    destination: /home/ec2-user/server
-
+  - source: source
+    destination: /home/ec2-user/app
 permissions:
   - object: /
     pattern: "**"
