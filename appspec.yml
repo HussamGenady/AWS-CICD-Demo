@@ -13,10 +13,6 @@ permissions:
 hooks:
   
   ApplicationStart:
-    - location: java -jar demo-0.0.1-SNAPSHOT.jar
-      timeout: 20
-      runas: ec2-user
-  ApplicationStop:
-    - location: server_stop.sh
+    - location: app/appStart.sh
       timeout: 20
       runas: ec2-user
