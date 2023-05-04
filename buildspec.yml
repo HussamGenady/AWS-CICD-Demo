@@ -14,8 +14,4 @@ artifacts:
   files:
     - '**/*'
     - appspec.yml
-  secondary-artifacts:
-    artifact1:
-      base-directory: /
-      files:
-        - '**/*'
+  discard-paths: yes

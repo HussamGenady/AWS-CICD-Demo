@@ -20,7 +20,7 @@ hooks:
       timeout: 300
       runas: ec2-user
   ApplicationStart:
-    - location: server_start.sh
+    - location: java -jar demo-0.0.1-SNAPSHOT.jar
       timeout: 20
       runas: ec2-user
   ApplicationStop:
