@@ -11,8 +11,19 @@ permissions:
     group: ec2-user
 
 hooks:
+  BeforeInstall:
+    - location: 
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: 
+      timeout: 300
+      runas: ec2-user
   ApplicationStart:
-    - location: server_start.sh
+    - location: /server_start.sh
       timeout: 20
       runas: ec2-user
- 
+  ApplicationStop:
+    - location: /server_stop.sh
+      timeout: 20
+      runas: ec2-user
