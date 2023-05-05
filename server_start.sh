@@ -1,3 +1,3 @@
 #!/bin/bash
-ls
-sudo java -jar demo-0.0.1-SNAPSHOT.jar
+pwd
+sudo java -jar /home/ec2-user/app/demo-0.0.1-SNAPSHOT.jar
